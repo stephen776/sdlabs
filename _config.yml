@@ -69,6 +69,14 @@ defaults:
           height: 600
   - scope:
       path: ""
+      type: "offerings"
+    values:
+      _options:
+        image_path:
+          width: 600
+          height: 600
+  - scope:
+      path: ""
       type: "pages"
     values:
       layout: "page"

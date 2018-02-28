@@ -2,16 +2,16 @@
 title: Contact
 heading: Get in touch today
 subtitle: We'd love to help your business.
-map:
+<!-- map:
   latitude: -45.8787605
   longitude: 170.5027976
   address: "1 George Street, Dunedin, New Zealand"
-  zoom: 13
+  zoom: 13 -->
 ---
 
 <section class="diagonal">
 	<div class="container">
-		<form action="{{ site.baseurl }}/contact-success/" method="post" class="contact-form">
+		<form action="https://formspree.io/patrick@secondderivative.io" method="post" class="contact-form">
 			<input type="hidden" name="_to" value="support@example.com" />
 			<input type="text" name="_gotcha" style="display: none;" />
 
@@ -38,11 +38,11 @@ map:
 	</div>
 </section>
 
-<section class="diagonal map">
+<!-- <section class="diagonal map">
 	<div id="gmap_canvas"></div>
-</section>
+</section> -->
 
-<section class="diagonal">
+<!-- <section class="diagonal">
 	<div class="container halves aligned-top">
 		<div>
 			<h3>Address</h3>
@@ -53,8 +53,8 @@ map:
 			<p><a href="mailto:{{ site.data.company.contact_email_address }}">{{ site.data.company.contact_email_address }}</a></p>
 		</div>
 	</div>
-</section>
-
+</section> -->
+<!--
 <script type="text/javascript">
 	window.mapData = {{ page.map | jsonify }};
 
@@ -82,4 +82,4 @@ map:
 		});
 	}
 </script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key={{ site.google_maps_javascript_api_key }}&amp;callback=initMap"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key={{ site.google_maps_javascript_api_key }}&amp;callback=initMap"></script> -->
