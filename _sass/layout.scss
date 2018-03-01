@@ -189,6 +189,10 @@ section {
 		> a:hover {
 			opacity: 0.9;
 		}
+
+		&.no-border {
+			border: none;
+		}
 	}
 
 	.square-image {
