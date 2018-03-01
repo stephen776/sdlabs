@@ -2,13 +2,15 @@
 title: About
 heading: Our team
 subtitle: Meet our team.
+order: 1
 ---
 
 <section class="diagonal patterned">
 	<div class="container">
 	    <p class="editor-link" style="text-align: center;"><a href="cloudcannon:collections/_staff_members/" class="btn"><strong>&#9998;</strong>Manage Staff members</a></p>
 		<ul class="image-grid">
-			{% for member in site.staff_members %}
+			{% assign members = site.staff_members | sort: 'order' %}
+			{% for member in members %}
 				<li>{% include staff-member.html member=member %}</li>
 			{% endfor %}
 		</ul>
