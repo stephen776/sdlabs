@@ -245,3 +245,105 @@ section {
 		color: #fefefe;
 	}
 }
+
+// Padding
+
+.sd-pad-top-xs {
+	padding-top: 5px;
+  }
+
+  .sd-pad-top-sm {
+	padding-top: 10px;
+  }
+
+  .sd-pad-top-md {
+	padding-top: 15px;
+  }
+
+  .sd-pad-top-lg {
+	padding-top: 20px;
+  }
+
+  .sd-pad-top-xl {
+	padding-top: 25px;
+  }
+
+  .sd-pad-right-xs {
+	padding-right: 5px;
+  }
+
+  .sd-pad-right-sm {
+	padding-right: 10px;
+  }
+
+  .sd-pad-right-md {
+	padding-right: 15px;
+  }
+
+  .sd-pad-right-lg {
+	padding-right: 20px;
+  }
+
+  .sd-pad-right-xl {
+	padding-right: 25px;
+  }
+
+  .sd-pad-bottom-xs {
+	padding-bottom: 5px;
+  }
+
+  .sd-pad-bottom-sm {
+	padding-bottom: 10px;
+  }
+
+  .sd-pad-bottom-md {
+	padding-bottom: 15px;
+  }
+
+  .sd-pad-bottom-lg {
+	padding-bottom: 20px;
+  }
+
+  .sd-pad-bottom-xl {
+	padding-bottom: 25px;
+  }
+
+  .sd-pad-left-xs {
+	padding-left: 5px;
+  }
+
+  .sd-pad-left-sm {
+	padding-left: 10px;
+  }
+
+  .sd-pad-left-md {
+	padding-left: 15px;
+  }
+
+  .sd-pad-left-lg {
+	padding-left: 20px;
+  }
+
+  .sd-pad-left-xl {
+	padding-left: 25px;
+  }
+
+// our custom styles - prob should move this to it's on file
+.sd-offerings-list {
+	.sd-offering {
+		font-size: 1.5em;
+		color: #fff;
+		height: 60px;
+		line-height: 60px;
+		list-style: none;
+
+		i, span {
+			vertical-align: middle;
+			display: inline;
+		}
+
+		i {
+			font-size: 1.5em;
+		}
+	}
+}

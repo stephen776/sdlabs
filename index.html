@@ -4,8 +4,9 @@ title: Second Derivative Labs
 
 <section class="hero diagonal">
 	<div class="container">
-		<h2 class="editable">We build websites</h2>
-		<p class="subtext editable">This is the <strong>Urban</strong> template from <a href="http://cloudcannon.com/">CloudCannon</a>. Urban is a strong foundation for the web presence of your agency.</p>
+		<h2 class="editable">APPS AND OTHER THINGS</h2>
+		<!-- <p class="subtext editable">In an environment where new software and development technologies are propagating at an unprecedented pace, organizations need to be strategic in how they choose to invest their capital. In mathematics, the second derivative measures just that – how quickly change itself is changing. Second Derivative Labs understands how the technological landscape is changing, and at what pace. We will partner with your organization to deploy cutting edge solutions leveraging best-in-breed technologies, significantly reducing your organization’s technical debt and exposure to technology obsolescence</p> -->
+		<p class="subtext editable">In mathematics, the second derivative measures how quickly change itself is changing. Second Derivative Labs understands how the technological landscape is changing, and at what pace. We will partner with your organization to deploy cutting edge solutions leveraging best-in-breed technologies, significantly reducing your organization’s technical debt and exposure to technology obsolescence</p>
 		<p><a class="button alt" href="{{ site.baseurl }}/contact/">Contact Us</a></p>
 	</div>
 </section>
@@ -13,15 +14,27 @@ title: Second Derivative Labs
 <section class="diagonal patterned">
 	<div class="container halves">
 		<div>
-			<h3 class="editable">Some of our work</h3>
-			<p class="editable">We take pride in our previous work and our happy customers. We cater to any sector to boost business and increase exposure.</p>
-			<p class="editable"><a href="{{ site.baseurl }}/portfolio/">View Full Portfolio &rarr;</a></p>
+			<h3 class="editable">Our Offerings</h3>
+			<p class="editable">We take pride in our work and creating happy customers. Let us help you build something amazing.</p>
 		</div>
 		<div>
-			<ul class="image-grid">
-				{% for client in site.clients limit: 4 %}
-					<li><a href="{{ site.baseurl }}{{ client.url }}"><img src="{% include relative-src.html src=client.image_path %}"></a></li>
-				{% endfor %}
+			<ul class="sd-offerings-list">
+				<li class="sd-offering">
+					<i class="material-icons">devices_other</i>
+					<span class="sd-pad-left-md">App Development</span>
+				</li>
+				<li class="sd-offering">
+					<i class="material-icons">cloud_queue</i>
+					<span class="sd-pad-left-md">Cloud</span>
+				</li>
+				<li class="sd-offering">
+					<i class="material-icons">build</i>
+					<span class="sd-pad-left-md">DevOps</span>
+				</li>
+				<li class="sd-offering">
+					<i class="material-icons">pie_chart</i>
+					<span class="sd-pad-left-md">Data Analytics</span>
+				</li>
 			</ul>
 		</div>
 	</div>
