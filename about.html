@@ -1,18 +1,25 @@
 ---
-title: About
-heading: Our team
-subtitle: Meet our team.
+title: About Us
+heading: What We Do
+subtitle: In an environment where new software and development technologies are propagating at an unprecedented pace, organizations need to be strategic in how they choose to invest their capital. In mathematics, the second derivative measures just that – how quickly change itself is changing. Second Derivative Labs understands how the technological landscape is changing, and at what pace. We will partner with your organization to deploy cutting edge solutions leveraging best-in-breed technologies, significantly reducing your organization’s technical debt and exposure to technology obsolescence.
 order: 1
 ---
 
 <section class="diagonal patterned">
 	<div class="container">
+		<h2>
+			Our Team
+		</h2>
+		<p class="subtext">
+			Meet our team.
+		</p>
+
 	    <p class="editor-link" style="text-align: center;"><a href="cloudcannon:collections/_staff_members/" class="btn"><strong>&#9998;</strong>Manage Staff members</a></p>
-		<ul class="image-grid">
+		<div class="sd-staff-list flexbox-container flex-align-content-center flex-justify-center">
 			{% assign members = site.staff_members | sort: 'order' %}
 			{% for member in members %}
-				<li>{% include staff-member.html member=member %}</li>
+				<div class="sd-staff-item">{% include staff-member.html member=member %}</div>
 			{% endfor %}
-		</ul>
+		</div>
 	</div>
 </section>

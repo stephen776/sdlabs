@@ -405,70 +405,70 @@ section {
   }
 
   .flex-align-content-stretch {
-	align-items: stretch;
+		align-items: stretch;
   }
 
   .flex-align-items-start {
-	align-items: flex-start;
+		align-items: flex-start;
   }
 
   .flex-align-items-baseline {
-	align-items: baseline;
+		align-items: baseline;
   }
 
   .flex-justify-content-space-between {
-	justify-content: space-between;
+		justify-content: space-between;
   }
 
   .flex-justify-content-space-around {
-	justify-content: space-around;
+		justify-content: space-around;
   }
 
   .flex-justify-center {
-	justify-content: center;
+		justify-content: center;
   }
 
   .flex-justify-content-start {
-	justify-content:flex-start;
+		justify-content:flex-start;
   }
 
   .flex-justify-content-end {
-	justify-content: flex-end;
+		justify-content: flex-end;
   }
 
   .flex-wrap {
-	flex-wrap:wrap;
+		flex-wrap:wrap;
   }
 
   .flex-nowrap {
-	flex-wrap: nowrap;
+		flex-wrap: nowrap;
   }
 
   .flex-grow {
-	flex-grow: 1;
+		flex-grow: 1;
   }
 
   .flex-container-align-center {
-	display:flex;
-	align-items: center;
-	flex-wrap: wrap;
+		display:flex;
+		align-items: center;
+		flex-wrap: wrap;
 
-	&.flex-nowrap {
-	  flex-wrap: nowrap;
+		&.flex-nowrap {
+			flex-wrap: nowrap;
 	}
   }
 
   .flex-container-align-justify-center{
-	display:flex;
-	align-items: center;
-	justify-content:center;
+		display:flex;
+		align-items: center;
+		justify-content:center;
   }
 
   .flex-container-column-align-justify-center{
-	display:flex;
-	align-items: center;
-	justify-content:center;
-	flex-direction: column;
+		display:flex;
+		align-items: center;
+		justify-content:center;
+		flex-direction: column;
   }
   .flex-base-text{
 	  align-items:baseline;
@@ -569,6 +569,47 @@ section {
 				width: 100px;
 				min-width: 100px;
 			}
+		}
+	}
+}
+
+.sd-staff-list {
+	.sd-staff-item {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
+		height: 380px;
+		width: 300px;
+		margin: 20px;
+
+		.staff-image {
+			img {
+				flex-shrink:0;
+				min-width:100%;
+				min-height:100%
+			}
+		}
+
+		.details {
+			line-height: 1.2;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background: rgba(0, 0, 0, 0.5);
+			padding: 20px;
+		}
+
+		.name {
+			font-size: 1.3rem;
+			color: $brand-color;
+		}
+
+		.position {
+			margin-top: 5px;
+			color: #fff;
 		}
 	}
 }
