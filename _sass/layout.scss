@@ -613,3 +613,21 @@ section {
 		}
 	}
 }
+
+.sd-offerings-page {
+	.sd-offering-item {
+		flex: 1 1 50%;
+
+		i,
+		div.offering-title {
+			vertical-align: middle;
+			display: inline;
+			text-align: center;
+			display: block;
+		}
+
+		i {
+			font-size: 5em;
+		}
+	}
+}
