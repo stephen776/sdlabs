@@ -504,6 +504,8 @@ section {
 }
 
 .sd-offerings-list {
+	padding-left: 0;
+
 	.sd-offering {
 		font-size: 1.5em;
 		color: #fff;
@@ -515,19 +517,25 @@ section {
 			display: inline;
 			text-align: center;
 			display: block;
-
-			@media #{$desktop} {
-				display: inline;
-			}
 		}
 
 		i {
 			font-size: 2em;
 		}
+	}
 
-		span {
-			@media #{$mid-point} {
-				padding-left: 15px;
+	@media #{$mid-point} {
+		padding-left: 20px;
+
+		.sd-offering > span {
+			padding-left: 15px;
+		}
+	}
+
+	@media #{$desktop} {
+		.sd-offering {
+			i, span {
+				display: inline;
 			}
 		}
 	}
