@@ -337,6 +337,139 @@ section {
 	  color: #fff;
   }
 
+  //basic flexbox classes
+  .flexbox-container {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	&.reverse {
+	  flex-direction: row-reverse;
+	}
+  }
+
+  .flexbox-container-column {
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+  }
+
+  .flexbox-child {
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+  }
+
+  .flexbox-child-half-basis {
+	-webkit-flex: 1 0 50%;
+	-ms-flex: 1 0 50%;
+	flex: 1 0 50%
+  }
+
+  .flexbox-child-grow {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+  }
+
+  .flex-align-center {
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+	align-items: center;
+  }
+
+  .flex-align-bottom {
+	align-items: flex-end;
+
+	label {
+	  margin-bottom:0;
+	}
+  }
+  .flex-align-content-center{
+	  align-items:center;
+  }
+
+  .flex-align-content-stretch {
+	align-items: stretch;
+  }
+
+  .flex-align-items-start {
+	align-items: flex-start;
+  }
+
+  .flex-align-items-baseline {
+	align-items: baseline;
+  }
+
+  .flex-justify-content-space-between {
+	justify-content: space-between;
+  }
+
+  .flex-justify-content-space-around {
+	justify-content: space-around;
+  }
+
+  .flex-justify-center {
+	justify-content: center;
+  }
+
+  .flex-justify-content-start {
+	justify-content:flex-start;
+  }
+
+  .flex-justify-content-end {
+	justify-content: flex-end;
+  }
+
+  .flex-wrap {
+	flex-wrap:wrap;
+  }
+
+  .flex-nowrap {
+	flex-wrap: nowrap;
+  }
+
+  .flex-grow {
+	flex-grow: 1;
+  }
+
+  .flex-container-align-center {
+	display:flex;
+	align-items: center;
+	flex-wrap: wrap;
+
+	&.flex-nowrap {
+	  flex-wrap: nowrap;
+	}
+  }
+
+  .flex-container-align-justify-center{
+	display:flex;
+	align-items: center;
+	justify-content:center;
+  }
+
+  .flex-container-column-align-justify-center{
+	display:flex;
+	align-items: center;
+	justify-content:center;
+	flex-direction: column;
+  }
+  .flex-base-text{
+	  align-items:baseline;
+  }
+
+@media (max-width: 450px) {
+	.mobile-reverse {
+		flex-direction: column-reverse;
+	}
+}
+
 // our custom styles - prob should move this to it's on file
 .y-prime-logo {
 	border: 2px solid #fff;
@@ -344,21 +477,58 @@ section {
 	padding: 2px 4px 4px 10px;
 }
 
+.sd-header-logo {
+	display: none;
+
+	@media #{$mid-point} {
+		display: inline;
+	}
+}
+
+.sd-hero-section {
+	.sd-logo-container {
+		display: block;
+
+		.y-prime-logo {
+			width: 100px;
+			height: 100px;
+			font-size:4.5em;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		@media #{$mid-point} {
+			display: none;
+		}
+	}
+}
+
 .sd-offerings-list {
 	.sd-offering {
 		font-size: 1.5em;
 		color: #fff;
-		height: 75px;
-		line-height: 75px;
 		list-style: none;
+		padding-top: 15px;
 
 		i, span {
 			vertical-align: middle;
 			display: inline;
+			text-align: center;
+			display: block;
+
+			@media #{$desktop} {
+				display: inline;
+			}
 		}
 
 		i {
 			font-size: 2em;
+		}
+
+		span {
+			@media #{$mid-point} {
+				padding-left: 15px;
+			}
 		}
 	}
 }
