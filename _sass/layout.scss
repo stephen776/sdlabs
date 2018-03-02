@@ -455,7 +455,7 @@ section {
 
 		&.flex-nowrap {
 			flex-wrap: nowrap;
-	}
+		}
   }
 
   .flex-container-align-justify-center{
@@ -616,18 +616,28 @@ section {
 
 .sd-offerings-page {
 	.sd-offering-item {
-		flex: 1 1 50%;
+		padding-bottom: 40px;
 
-		i,
-		div.offering-title {
-			vertical-align: middle;
-			display: inline;
+		.offering-title {
+			font-size: 2em;
 			text-align: center;
-			display: block;
+			flex-basis: 220px;
+			flex-grow: 0;
+
+			i, div{
+				vertical-align: middle;
+				display: inline;
+				text-align: center;
+				display: block;
+			}
+
+			i {
+				font-size: 5em;
+			}
 		}
 
-		i {
-			font-size: 5em;
+		.offering-content {
+			padding-left: 40px;
 		}
 	}
 }
