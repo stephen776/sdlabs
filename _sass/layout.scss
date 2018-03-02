@@ -637,7 +637,16 @@ section {
 		}
 
 		.offering-content {
-			padding-left: 40px;
+			padding-left: 0px;
+			min-width: 360px;
+		}
+	}
+
+	@media #{$mid-point} {
+		.sd-offering-item {
+			.offering-content {
+				padding-left: 40px;
+			}
 		}
 	}
 }
