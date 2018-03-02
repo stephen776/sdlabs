@@ -1,12 +1,12 @@
 title: Second Derivative Labs
-url: "https://teal-worm.cloudvent.net"
+url: "https://secondderivative.io"
 baseurl:
 google_analytics_key:
 google_maps_javascript_api_key:
 disqus_shortname:
 
 # Default description in social shares for the jekyll-seo-tag gem
-description: Jekyll template with example content for a web agency.
+description: Second Derivative Labs understands the technological landscape, where it’s changing and how fast. Partner with us to deploy cutting edge solutions and avoid technical debt.
 
 # Author details for the jekyll-seo-tag gem
 author:
@@ -24,7 +24,9 @@ collections:
   staff_members:
     output: false
   clients:
-    output: true
+    output: false
+  offerings:
+    output: false
 
 paginate: 10
 paginate_path: "/blog/:num/"
@@ -62,14 +64,6 @@ defaults:
   - scope:
       path: ""
       type: "staff_members"
-    values:
-      _options:
-        image_path:
-          width: 600
-          height: 600
-  - scope:
-      path: ""
-      type: "offerings"
     values:
       _options:
         image_path:

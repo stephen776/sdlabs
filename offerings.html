@@ -1,16 +1,28 @@
 ---
 title: Offerings
 heading: Our Services
-subtitle: What we offer.
+subtitle: We will partner with your organization to deploy cutting edge solutions leveraging best-in-breed technologies, significantly reducing your organization’s technical debt and exposure to technology obsolescence.
 ---
 
 <section class="diagonal patterned">
 	<div class="container">
-	    <p class="editor-link" style="text-align: center;"><a href="cloudcannon:collections/_staff_members/" class="btn"><strong>&#9998;</strong>Manage Staff members</a></p>
-		<ul class="image-grid">
-			{% for offering in site.offerings %}
-				<li>{% include offering-item.html offering=offering %}</li>
-			{% endfor %}
-		</ul>
+		<div class="flexbox-container">
+			<div class="flexbox-child">
+				<i class="material-icons">devices_other</i>
+				<div>App Development</div>
+			</div>
+			<div class="flexbox-child">
+				<i class="material-icons">cloud_queue</i>
+				<div>Cloud</div>
+			</div>
+			<div class="flexbox-child">
+				<i class="material-icons">build</i>
+				<div>DevOps</div>
+			</div>
+			<div class="flexbox-child">
+				<i class="material-icons">insert_chart</i>
+				<div>Data Analytics</div>
+			</div>
+		</div>
 	</div>
 </section>

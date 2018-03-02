@@ -1,8 +1,8 @@
 links:
 # - name: Portfolio
 #   link: /portfolio/
-# - name: Offerings
-#   link: /offerings/
+- name: Offerings
+  link: /offerings/
 - name: About Us
   link: /about/
 - name: Contact

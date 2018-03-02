@@ -6,8 +6,8 @@
     #   link: /portfolio/
     # - name: Blog
     #   link: /blog/
-    # - name: Offerings
-    #   link: /offerings/
+    - name: Offerings
+      link: /offerings/
     - name: About Us
       link: /about/
     - name: Contact
