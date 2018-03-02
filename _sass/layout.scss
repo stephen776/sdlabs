@@ -85,17 +85,27 @@ section {
 		}
 
 		h2 {
-			font-size: 3.5rem;
+			font-size: 2.6rem;
 		}
 
 		p {
-			font-size: 1.8rem;
+			font-size: 1.2rem;
 			color: #fff;
 		}
 
 		a:not(.button) {
 			color: #ffffff;
 			font-style: italic;
+		}
+
+		@media #{$mid-point} {
+			h2 {
+				font-size: 3.5rem;
+			}
+
+			p {
+				font-size: 1.8rem;
+			}
 		}
 	}
 
@@ -486,18 +496,26 @@ section {
 }
 
 .sd-hero-section {
+	text-align: center;
+	font-size: 0.75em;
+
 	.sd-logo-container {
 		display: block;
 
 		.y-prime-logo {
 			width: 100px;
 			height: 100px;
-			font-size:4.5em;
+			font-size:4.5rem;
 			margin-left: auto;
 			margin-right: auto;
 		}
+	}
 
-		@media #{$mid-point} {
+	/*style for midpoint and above*/
+	@media #{$mid-point} {
+		text-align: left;
+
+		.sd-logo-container {
 			display: none;
 		}
 	}
