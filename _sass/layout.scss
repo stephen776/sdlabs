@@ -563,6 +563,7 @@ section {
 	.image-grid {
 		li {
 			text-align: center;
+			flex: 1 1 30%;
 
 			img {
 				height: 100px;
@@ -573,6 +574,7 @@ section {
 	}
 }
 
+// about page
 .sd-staff-list {
 	.sd-staff-item {
 		position: relative;
